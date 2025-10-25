@@ -2,6 +2,8 @@
 
 ### delete node
 
+thgyjtv 
+
 ```python
 class TreeNode:
     def init(self, val=0, left=None, right=None):
