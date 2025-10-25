@@ -2,7 +2,7 @@
 
 ### delete node
 
-thgyjtv 
+
 
 ```python
 class TreeNode:
