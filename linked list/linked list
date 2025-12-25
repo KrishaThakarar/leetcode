@@ -47,3 +47,8 @@ class Solution:
             curr=next_temp
         return prev
         
+
+##Slow pointer → moves 1 step at a time
+
+ ##Fast pointer → moves 2 steps at a time
+
