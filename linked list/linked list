@@ -52,6 +52,51 @@ class Solution:
 
  ##Fast pointer → moves 2 steps at a time
 
+##for slow and fast type problem can solve with store data in that way 
+
+##problem: linked list cycle 1
+in takeuforwar
+Example 1:
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+
+##ans 
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        nodes=set()
+        current=head
+        while current is not None:
+            if current in nodes:
+                return True
+            nodes.add(current)
+            current=current.next
+        return False
+
+##problem: linked list cycle 2
+##ans
+class Solution:
+    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        seen_node=set()
+        node=head
+        while node is not None:
+            if node in seen_node:
+                return node
+            else:
+                seen_node.add(node)
+                node=node.next
+        return None
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##problem :subset
