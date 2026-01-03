@@ -1,0 +1,8 @@
+##What is Backtracking? (General Explanation)
+###In very simple words:
+
+Backtracking is a method where you try all possible options step-by-step, and if one option doesn’t work, you go back and try another.
+
+It follows this pattern:
+
+Try → Check → If wrong, Undo → Try next
