@@ -84,3 +84,17 @@ class Solution:
             result = (result + arr[i] * left * right) % MOD
 
         return result
+
+
+
+
+
+##how to find middle node using fast and slow method:
+if not head or not head.next:
+            return
+        
+        # Step 1: Find middle
+        slow, fast = head, head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
