@@ -117,3 +117,31 @@ Exclude it
 Recursively explore all possibilities
 Store every subset you create\
 
+##Swap Nodes in Pairs
+### answer:
+class Solution(object):
+    def swapPairs(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        dummy = ListNode(0)
+        dummy.next = head
+        prev = dummy
+
+        while prev.next and prev.next.next:
+            first = prev.next
+            second = prev.next.next
+
+            first.next = second.next
+            second.next = first
+            prev.next = second
+
+            prev = first
+        return dummy.next
+###Input: head = [1,2,3,4]
+
+Output: [2,1,4,3]
+Input: head = [1,2,3]
+
+Output: [2,1,3]
